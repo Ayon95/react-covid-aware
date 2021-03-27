@@ -1,16 +1,21 @@
+/* VARIABLES */
+$color-primary: #2b2e4a;
+$color-secondary: #e84545;
+
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
-  box-sizing: border-box;
+	font-size: 62.5%;
+	box-sizing: border-box;
 }
 
 body {
-  font-size: 1.6rem;
+	font-family: 'Quicksand';
+	font-size: 1.6rem;
 }
