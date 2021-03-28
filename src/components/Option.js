@@ -1,8 +1,8 @@
-function Option({ option }) {
+function Option({ option, handleClickOption }) {
 	return (
-		<div className="option">
+		<div className="option" onClick={() => handleClickOption(option._id)}>
 			<h2 className="option__title">{option.title}</h2>
-			<p className="option__zone">{option.zone} zone</p>
+			<p className="option__zone">{option.name} zone</p>
 			<img src={option.imgSrc} alt={option.title + 'Icon'} className="option__image" />
 		</div>
 	);

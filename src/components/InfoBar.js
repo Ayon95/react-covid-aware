@@ -1,19 +1,19 @@
-function InfoBar() {
+function InfoBar({ score, highScore, questions }) {
 	return (
 		<div className="info-bar">
-			<div className="info-bar__highscore">
+			<div>
 				<span className="info-bar__text">Highscore: </span>
-				<span className="info-bar__value">0</span>
+				<span className="info-bar__value">{highScore}</span>
 			</div>
 
-			<div className="info-bar__score">
+			<div>
 				<span className="info-bar__text">Score: </span>
-				<span className="info-bar__value">0</span>
+				<span className="info-bar__value">{score}</span>
 			</div>
 
-			<div className="info-bar__questions-left">
-				<span className="info-bar__text">Questions left: </span>
-				<span className="info-bar__value">10</span>
+			<div>
+				<span className="info-bar__text">Total questions: </span>
+				<span className="info-bar__value">{questions.length}</span>
 			</div>
 		</div>
 	);
