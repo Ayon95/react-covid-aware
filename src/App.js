@@ -4,7 +4,6 @@ import InfoBar from './components/InfoBar.js';
 function App() {
 	return (
 		<div className="App">
-			<InfoBar />
 			<Game />
 		</div>
 	);

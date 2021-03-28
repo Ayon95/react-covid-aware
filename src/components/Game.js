@@ -1,8 +1,12 @@
+import InfoBar from './InfoBar';
+import Question from './Question';
+
 function Game() {
 	return (
-		<div>
-			<p>Game component</p>
-		</div>
+		<>
+			<InfoBar />
+			<Question />
+		</>
 	);
 }
 
