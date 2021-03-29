@@ -13,7 +13,7 @@
 	border-radius: 4px;
 	overflow: hidden;
 	cursor: pointer;
-	transition: transform 0.4s;
+	transition: opacity 0.4s;
 
 	&__title {
 		font-size: 2.2rem;
@@ -26,11 +26,11 @@
 
 	&__image {
 		display: block; // to get rid of the white space below the image
-		width: 13vw;
+		width: 14vw;
 		height: auto;
 	}
 
 	&:hover {
-		transform: scale(1.03);
+		opacity: 0.8;
 	}
 }

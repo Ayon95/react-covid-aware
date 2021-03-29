@@ -33,13 +33,14 @@ function Game({ questions }) {
 		<>
 			<InfoBar score={score} highScore={highScore} questions={questions} />
 			<Question question={currentQuestion} />
-			{shouldShowMessage && (
+			{
 				<Message
 					removeMessage={removeMessage}
 					answeredCorrectly={answeredCorrectly}
 					goToNextQuestion={goToNextQuestion}
+					shouldShowMessage={shouldShowMessage}
 				/>
-			)}
+			}
 			<Options handleClickOption={handleClickOption} />
 		</>
 	);
