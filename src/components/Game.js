@@ -3,6 +3,7 @@ import Options from './Options';
 import Question from './Question';
 import { useEffect, useState } from 'react';
 import Message from './Message';
+import Modal from './Modal';
 
 function Game({ questions }) {
 	const [questionIndex, setQuestionIndex] = useState(0);
@@ -42,7 +43,6 @@ function Game({ questions }) {
 			setAnsweredCorrectly(false);
 			setShouldShowAnswers(true); // need to show the correct options if the user's answer is wrong
 		}
-
 		// need to show message
 		setShouldShowMessage(true);
 	}
@@ -69,6 +69,7 @@ function Game({ questions }) {
 				answers={currentQuestion.answers}
 				shouldShowAnswers={shouldShowAnswers}
 			/>
+			{gameIsOver && <Modal score={score} />}
 		</>
 	);
 }

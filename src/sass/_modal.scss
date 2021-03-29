@@ -1,0 +1,29 @@
+.overlay {
+	position: fixed;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 5;
+	background-color: rgba(white, 0.75);
+	backdrop-filter: blur(6px);
+}
+
+.modal {
+	background-color: rgba($color-secondary, 0.85);
+	color: $color-secondary;
+	text-align: center;
+	padding: 4rem 0;
+	width: 80%;
+	max-width: 50rem;
+	border-radius: 4px;
+	box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
+
+	& h2 {
+		color: $color-primary;
+		font-size: 4rem;
+		margin-bottom: 3rem;
+	}
+}
