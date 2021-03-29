@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Message from './Message';
 import Modal from './Modal';
 
-function Game({ questions }) {
+function Game({ questions, gameIsOver, setGameIsOver }) {
 	const [questionIndex, setQuestionIndex] = useState(0);
 	const currentQuestion = questions[questionIndex];
 	const [score, setScore] = useState(0);
@@ -13,13 +13,18 @@ function Game({ questions }) {
 	const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 	const [shouldShowMessage, setShouldShowMessage] = useState(false);
 	const [shouldShowAnswers, setShouldShowAnswers] = useState(false);
-	const [gameIsOver, setGameIsOver] = useState(false);
 
 	const removeMessage = () => setShouldShowMessage(false);
 
 	function endGame() {
 		setGameIsOver(true);
 		if (score > highScore) setHighScore(score);
+	}
+
+	function startGame() {
+		setGameIsOver(false);
+		setQuestionIndex(0);
+		setScore(0);
 	}
 
 	function goToNextQuestion() {
@@ -69,7 +74,7 @@ function Game({ questions }) {
 				answers={currentQuestion.answers}
 				shouldShowAnswers={shouldShowAnswers}
 			/>
-			{gameIsOver && <Modal score={score} />}
+			{gameIsOver && <Modal score={score} startGame={startGame} />}
 		</>
 	);
 }

@@ -1,13 +1,11 @@
-import { Link } from 'react-router-dom';
-
-function Modal({ score }) {
+function Modal({ score, startGame }) {
 	return (
 		<div className="overlay">
 			<div className="modal">
 				<h2>Your score: {score}</h2>
-				<Link to="/game" className="btn">
+				<button className="btn" onClick={startGame}>
 					Play again
-				</Link>
+				</button>
 			</div>
 		</div>
 	);
