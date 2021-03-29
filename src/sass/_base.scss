@@ -4,6 +4,19 @@ $color-secondary: #e84545;
 $color-secondary-light: #f35f5f;
 $shadow: 0 1rem 2rem 1px rgba(0, 0, 0, 0.4);
 
+/* MEDIA QUERIES */
+
+$bp-medium: 900px;
+$bp-small: 700px;
+$bp-smaller: 550px;
+$bp-smallest: 390px;
+
+@mixin respond-max($breakpoint) {
+	@media only screen and (max-width: $breakpoint / 16px * 1em) {
+		@content;
+	}
+}
+
 *,
 *::before,
 *::after {
@@ -15,6 +28,22 @@ $shadow: 0 1rem 2rem 1px rgba(0, 0, 0, 0.4);
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
+
+	@include respond-max($bp-medium) {
+		font-size: 54%;
+	}
+
+	@include respond-max($bp-small) {
+		font-size: 48%;
+	}
+
+	@include respond-max($bp-smaller) {
+		font-size: 44%;
+	}
+
+	@include respond-max($bp-smallest) {
+		font-size: 40%;
+	}
 }
 
 body {

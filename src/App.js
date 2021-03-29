@@ -4,6 +4,8 @@ import Game from './components/Game.js';
 import { getRandomQuestions } from './services/localQuestionService.js';
 import { useEffect, useState } from 'react';
 
+const highscore = Number.parseFloat(localStorage.getItem('highscore'));
+
 function App() {
 	const [gameIsOver, setGameIsOver] = useState(false);
 	const [questions, setQuestions] = useState(null);
@@ -20,7 +22,12 @@ function App() {
 					</Route>
 					<Route path="/game">
 						{questions && (
-							<Game questions={questions} gameIsOver={gameIsOver} setGameIsOver={setGameIsOver} />
+							<Game
+								questions={questions}
+								highscore={highscore}
+								gameIsOver={gameIsOver}
+								setGameIsOver={setGameIsOver}
+							/>
 						)}
 					</Route>
 				</Switch>

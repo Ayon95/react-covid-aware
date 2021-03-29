@@ -5,11 +5,11 @@ import { useEffect, useState } from 'react';
 import Message from './Message';
 import Modal from './Modal';
 
-function Game({ questions, gameIsOver, setGameIsOver }) {
+function Game({ questions, highscore, gameIsOver, setGameIsOver }) {
 	const [questionIndex, setQuestionIndex] = useState(0);
 	const currentQuestion = questions[questionIndex];
 	const [score, setScore] = useState(0);
-	const [highScore, setHighScore] = useState(0);
+	const [highScore, setHighScore] = useState(highscore ? highscore : 0);
 	const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 	const [shouldShowMessage, setShouldShowMessage] = useState(false);
 	const [shouldShowAnswers, setShouldShowAnswers] = useState(false);
@@ -18,7 +18,10 @@ function Game({ questions, gameIsOver, setGameIsOver }) {
 
 	function endGame() {
 		setGameIsOver(true);
-		if (score > highScore) setHighScore(score);
+		if (score > highScore) {
+			localStorage.setItem('highscore', String(score));
+			setHighScore(score);
+		}
 	}
 
 	function startGame() {
