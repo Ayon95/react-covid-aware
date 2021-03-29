@@ -12,8 +12,6 @@ function Game({ questions }) {
 	const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 	const [shouldShowMessage, setShouldShowMessage] = useState(false);
 	const [shouldShowAnswers, setShouldShowAnswers] = useState(false);
-	console.log(currentQuestion);
-	console.log(questions);
 
 	const removeMessage = () => setShouldShowMessage(false);
 	const goToNextQuestion = () => setQuestionIndex(questionIndex + 1);
