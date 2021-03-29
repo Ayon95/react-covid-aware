@@ -36,6 +36,10 @@
 	&__secondary-heading {
 		font-weight: 500;
 		font-size: 1.9rem;
+
+		@include respond-min($bp-large) {
+			font-size: 2.4rem;
+		}
 	}
 
 	&__description {

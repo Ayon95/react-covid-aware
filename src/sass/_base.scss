@@ -5,7 +5,7 @@ $color-secondary-light: #f35f5f;
 $shadow: 0 1rem 2rem 1px rgba(0, 0, 0, 0.4);
 
 /* MEDIA QUERIES */
-
+$bp-large: 1800px;
 $bp-medium: 900px;
 $bp-small: 700px;
 $bp-smaller: 550px;
@@ -13,6 +13,12 @@ $bp-smallest: 390px;
 
 @mixin respond-max($breakpoint) {
 	@media only screen and (max-width: $breakpoint / 16px * 1em) {
+		@content;
+	}
+}
+
+@mixin respond-min($breakpoint) {
+	@media only screen and (min-width: $breakpoint / 16px * 1em) {
 		@content;
 	}
 }
@@ -44,11 +50,19 @@ html {
 	@include respond-max($bp-smallest) {
 		font-size: 40%;
 	}
+
+	@include respond-min($bp-large) {
+		font-size: 85%;
+	}
 }
 
 body {
 	font-family: 'Quicksand';
 	font-size: 1.6rem;
+
+	@include respond-min($bp-large) {
+		font-size: 2.3rem;
+	}
 }
 
 p {
@@ -81,6 +95,10 @@ p {
 	padding: 0.7em 1.5em;
 	border-radius: 5px;
 	transition: opacity 0.4s;
+
+	@include respond-min($bp-large) {
+		font-size: 2.4rem;
+	}
 
 	&:hover {
 		opacity: 0.85;
