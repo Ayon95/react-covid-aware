@@ -11,6 +11,7 @@
 	color: $color-secondary;
 	text-align: center;
 	border-radius: 4px;
+	width: 14vw;
 	overflow: hidden;
 	cursor: pointer;
 	transition: opacity 0.4s;
@@ -26,11 +27,14 @@
 
 	&__image {
 		display: block; // to get rid of the white space below the image
-		width: 14vw;
-		height: auto;
+		width: 100%;
 	}
 
 	&:hover {
 		opacity: 0.8;
+	}
+
+	&--correct {
+		border: 5px solid #35e077;
 	}
 }

@@ -13,7 +13,7 @@ function Message({ removeMessage, answeredCorrectly, goToNextQuestion, shouldSho
 			const timeout = setTimeout(() => {
 				removeMessage();
 				goToNextQuestion();
-			}, 3000);
+			}, 2000);
 			// cleanup function
 			return () => clearTimeout(timeout);
 		}

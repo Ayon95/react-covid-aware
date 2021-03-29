@@ -11,6 +11,7 @@ function Game({ questions }) {
 	const [highScore, setHighScore] = useState(0);
 	const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 	const [shouldShowMessage, setShouldShowMessage] = useState(false);
+	const [shouldShowAnswers, setShouldShowAnswers] = useState(false);
 	console.log(currentQuestion);
 	console.log(questions);
 
@@ -23,11 +24,19 @@ function Game({ questions }) {
 		if (isCorrect) {
 			setScore(score + 1);
 			setAnsweredCorrectly(true);
-		} else setAnsweredCorrectly(false);
+		} else {
+			setAnsweredCorrectly(false);
+			setShouldShowAnswers(true); // need to show the correct options if the user's answer is wrong
+		}
 
 		// need to show message
 		setShouldShowMessage(true);
 	}
+
+	// whenever we go to the next question, we need to reset shouldShowAnswers to false
+	useEffect(() => {
+		setShouldShowAnswers(false);
+	}, [questionIndex]);
 
 	return (
 		<>
@@ -41,7 +50,11 @@ function Game({ questions }) {
 					shouldShowMessage={shouldShowMessage}
 				/>
 			}
-			<Options handleClickOption={handleClickOption} />
+			<Options
+				handleClickOption={handleClickOption}
+				answers={currentQuestion.answers}
+				shouldShowAnswers={shouldShowAnswers}
+			/>
 		</>
 	);
 }
