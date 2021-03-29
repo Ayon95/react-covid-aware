@@ -407,5 +407,5 @@ export function getRandomQuestions() {
 		const j = Math.floor(Math.random() * (i + 1));
 		[shuffleQuestions[i], shuffleQuestions[j]] = [shuffleQuestions[j], shuffleQuestions[i]];
 	}
-	return shuffleQuestions.slice(0, 10);
+	return shuffleQuestions.slice(0, 4);
 }

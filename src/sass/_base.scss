@@ -1,8 +1,7 @@
 /* VARIABLES */
 $color-primary: #2b2e4a;
 $color-secondary: #e84545;
-$color-secondary-light-1: #f35f5f;
-$color-secondary-light-2: #eb5151;
+$color-secondary-light: #f35f5f;
 $shadow: 0 2rem 3rem 2px rgba(0, 0, 0, 0.15);
 
 *,
@@ -46,4 +45,9 @@ body {
 	letter-spacing: 1px;
 	padding: 0.6em 1.5em;
 	border-radius: 5px;
+	transition: opacity 0.4s;
+
+	&:hover {
+		opacity: 0.85;
+	}
 }

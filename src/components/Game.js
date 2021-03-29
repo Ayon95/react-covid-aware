@@ -12,11 +12,27 @@ function Game({ questions }) {
 	const [answeredCorrectly, setAnsweredCorrectly] = useState(false);
 	const [shouldShowMessage, setShouldShowMessage] = useState(false);
 	const [shouldShowAnswers, setShouldShowAnswers] = useState(false);
+	const [gameIsOver, setGameIsOver] = useState(false);
 
 	const removeMessage = () => setShouldShowMessage(false);
-	const goToNextQuestion = () => setQuestionIndex(questionIndex + 1);
+
+	function endGame() {
+		setGameIsOver(true);
+		if (score > highScore) setHighScore(score);
+	}
+
+	function goToNextQuestion() {
+		// don't go to the next question if the user is on the last question
+		if (currentQuestion.number === questions.length) {
+			endGame();
+			return;
+		}
+		setQuestionIndex(questionIndex + 1);
+	}
 
 	function handleClickOption(optionID) {
+		// only do something if the game is not over
+		if (gameIsOver) return;
 		// checking if the user answered correctly or not
 		const isCorrect = currentQuestion.answers.some(answer => answer._id === optionID);
 		if (isCorrect) {

@@ -3,11 +3,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: linear-gradient(
-		to right bottom,
-		$color-secondary-light-1,
-		$color-secondary-light-2
-	);
+	background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary);
 }
 
 .game-intro {
