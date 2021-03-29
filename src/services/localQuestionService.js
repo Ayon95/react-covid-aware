@@ -57,7 +57,7 @@ const questions = [
 	{
 		_id: '9',
 		text:
-			'No indoor organized public events and social gatherings&#44; except with members of the same household?',
+			'No indoor organized public events and social gatherings, except with members of the same household?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
@@ -77,7 +77,7 @@ const questions = [
 	},
 	{
 		_id: '13',
-		text: 'Horse Racing&#44; Training Only and No Races?',
+		text: 'Horse Racing Training Only and No Races?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
@@ -115,7 +115,7 @@ const questions = [
 	},
 	{
 		_id: '19',
-		text: 'Outdoor limits for religious gatherings&#44; funerals&#44; and wedding events 100?',
+		text: 'Outdoor limits for religious gatherings, funerals, and wedding events 100?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -126,7 +126,7 @@ const questions = [
 	{
 		_id: '20',
 		text:
-			'Indoor limits for religious gatherings&#44; funerals&#44; and wedding events 30% capacity of room?',
+			'Indoor limits for religious gatherings, funerals, and wedding events 30% capacity of room?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -136,12 +136,12 @@ const questions = [
 	},
 	{
 		_id: '21',
-		text: 'Outdoor limits for religious gatherings&#44; funerals&#44; and wedding events 10?, 5',
+		text: 'Outdoor limits for religious gatherings, funerals, and wedding events 10?, 5',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '22',
-		text: 'Indoor limits for religious gatherings&#44; funerals&#44; and wedding events 100?, 5',
+		text: 'Indoor limits for religious gatherings, funerals, and wedding events 100?, 5',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
@@ -181,7 +181,7 @@ const questions = [
 	},
 	{
 		_id: '27',
-		text: 'Maintain 2 metre physical distancing&#44; unless engaged in a sport?',
+		text: 'Maintain 2 metre physical distancing, unless engaged in a sport?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -216,23 +216,22 @@ const questions = [
 	},
 	{
 		_id: '32',
-		text: 'Indoor limits for areas with weights or exercise equipment 50?, 1, 2',
+		text: 'Indoor limits for areas with weights or exercise equipment 50?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '33',
-		text:
-			'Maximum of 50 people total in areas with weights and exercise machines and all classes?, 3',
+		text: 'Maximum of 50 people total in areas with weights and exercise machines and all classes?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '34',
-		text: 'Indoor limits for sports spectators 50?, 1, 2',
+		text: 'Indoor limits for sports spectators 50?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '35',
-		text: 'Outdoor limits for sports spectators 100?, 1, 2',
+		text: 'Outdoor limits for sports spectators 100?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
@@ -252,7 +251,7 @@ const questions = [
 	},
 	{
 		_id: '38',
-		text: 'Oxygen bars&#44; steam rooms and saunas closed?',
+		text: 'Oxygen bars, steam rooms, and saunas closed?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -263,8 +262,7 @@ const questions = [
 	},
 	{
 		_id: '39',
-		text:
-			'For malls&#44; a safety plan is required to be prepared and made available upon request?',
+		text: 'For malls, a safety plan is required to be prepared and made available upon request?',
 		answers: [
 			{ _id: '2', name: 'Yellow' },
 			{ _id: '3', name: 'Orange' },
@@ -273,7 +271,7 @@ const questions = [
 	},
 	{
 		_id: '40',
-		text: 'Limits for casinos&#44; bingo halls&#44; and gaming establishments 50?',
+		text: 'Limits for casinos, bingo halls, and gaming establishments 50?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -282,17 +280,17 @@ const questions = [
 	},
 	{
 		_id: '41',
-		text: 'Indoor limits for casinos&#44; bingo halls&#44; and gaming establishments 10?',
+		text: 'Indoor limits for casinos, bingo halls, and gaming establishments 10?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '42',
-		text: 'Outdoor limits for casinos&#44; bingo halls&#44; and gaming establishments 25?',
+		text: 'Outdoor limits for casinos, bingo halls, and gaming establishments 25?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '43',
-		text: 'Table games are prohibited casinos&#44; bingo halls&#44; and gaming establishments?',
+		text: 'Table games are prohibited casinos, bingo halls, and gaming establishments?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -303,7 +301,7 @@ const questions = [
 	{
 		_id: '44',
 		text:
-			'Cinemas are closed except for drive-in cinemas&#44; rehearsals&#44; or performing broadcasted events with restrictions?',
+			'Cinemas are closed except for drive-in cinemas, rehearsals, or performing broadcasted events with restrictions?',
 		answers: [
 			{ _id: '4', name: 'Red' },
 			{ _id: '5', name: 'Grey' },
@@ -311,7 +309,7 @@ const questions = [
 	},
 	{
 		_id: '45',
-		text: 'For cinemas&#44; a safety plan is required?',
+		text: 'For cinemas, a safety plan is required?',
 		answers: [
 			{ _id: '2', name: 'Yellow' },
 			{ _id: '3', name: 'Orange' },
@@ -368,17 +366,17 @@ const questions = [
 	},
 	{
 		_id: '51',
-		text: 'Amusement parks and water parks are closed?, 5',
+		text: 'Amusement parks and water parks are closed?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '52',
-		text: 'In-person driving instruction not permitted?, 5',
+		text: 'In-person driving instruction not permitted?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '53',
-		text: 'Tour and guide services closed?, 5',
+		text: 'Tour and guide services closed?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
@@ -393,19 +391,13 @@ const questions = [
 	},
 ];
 
-export function getQuestions() {
-	return questions;
-}
-
-export function getQuestion(id) {
-	return questions.find(q => q._id === id);
-}
-
 export function getRandomQuestions() {
 	let shuffleQuestions = [...questions];
 	for (let i = shuffleQuestions.length - 1; i > 0; i--) {
 		const j = Math.floor(Math.random() * (i + 1));
 		[shuffleQuestions[i], shuffleQuestions[j]] = [shuffleQuestions[j], shuffleQuestions[i]];
 	}
-	return shuffleQuestions.slice(0, 4);
+	return shuffleQuestions.slice(0, 10).map((question, index) => {
+		return { ...question, number: index + 1 }; // adding a new property, number
+	});
 }

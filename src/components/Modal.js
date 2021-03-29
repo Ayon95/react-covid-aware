@@ -2,7 +2,9 @@ function Modal({ score, startGame }) {
 	return (
 		<div className="overlay">
 			<div className="modal">
-				<h2>Your score: {score}</h2>
+				<div className="modal__header">
+					<h2>Your score: {score}</h2>
+				</div>
 				<button className="btn" onClick={startGame}>
 					Play again
 				</button>

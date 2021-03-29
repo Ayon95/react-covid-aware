@@ -9,7 +9,7 @@
 .game-intro {
 	width: 85%;
 	max-width: 60ch;
-	box-shadow: $shadow;
+	box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3);
 
 	&__header {
 		background-color: $color-primary;
@@ -19,7 +19,7 @@
 	}
 
 	&__main {
-		background-color: #eee;
+		background-color: rgb(233, 233, 233);
 		border-radius: 0 0 4px 4px;
 	}
 
@@ -39,7 +39,6 @@
 	}
 
 	&__description {
-		line-height: 1.6;
 		margin-bottom: 2rem;
 	}
 }

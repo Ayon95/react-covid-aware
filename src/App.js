@@ -8,14 +8,8 @@ function App() {
 	const [gameIsOver, setGameIsOver] = useState(false);
 	const [questions, setQuestions] = useState(null);
 	useEffect(() => {
-		console.log('App useEffect ran');
-		if (!questions || gameIsOver) {
-			console.log('questions loaded');
-			const questions = getRandomQuestions().map((question, index) => {
-				return { ...question, number: index + 1 };
-			});
-			setQuestions(questions);
-		}
+		// get questions if there are no questions or game is over
+		if (!questions || gameIsOver) setQuestions(getRandomQuestions());
 	}, [gameIsOver]);
 	return (
 		<Router>

@@ -2,7 +2,7 @@
 $color-primary: #2b2e4a;
 $color-secondary: #e84545;
 $color-secondary-light: #f35f5f;
-$shadow: 0 2rem 3rem 2px rgba(0, 0, 0, 0.15);
+$shadow: 0 1rem 2rem 1px rgba(0, 0, 0, 0.4);
 
 *,
 *::before,
@@ -20,6 +20,11 @@ html {
 body {
 	font-family: 'Quicksand';
 	font-size: 1.6rem;
+}
+
+p {
+	line-height: 1.6;
+	font-weight: 500;
 }
 
 .link {
@@ -44,7 +49,7 @@ body {
 	color: $color-secondary;
 	font-size: 2rem;
 	letter-spacing: 1px;
-	padding: 0.6em 1.5em;
+	padding: 0.7em 1.5em;
 	border-radius: 5px;
 	transition: opacity 0.4s;
 

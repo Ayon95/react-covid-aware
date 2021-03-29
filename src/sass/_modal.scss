@@ -1,29 +1,32 @@
 .overlay {
 	position: fixed;
 	top: 0;
-	height: 100%;
-	width: 100%;
+	height: 100vh;
+	width: 100vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	z-index: 5;
-	background-color: rgba(white, 0.75);
+	background-color: rgba(#eee, 0.75);
 	backdrop-filter: blur(6px);
 }
 
 .modal {
-	background-color: rgba($color-secondary, 0.85);
+	background-color: rgba($color-secondary, 0.8);
 	color: $color-secondary;
 	text-align: center;
-	padding: 4rem 0;
+	padding-bottom: 4rem;
 	width: 80%;
 	max-width: 50rem;
 	border-radius: 4px;
+	overflow: hidden;
 	box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
 
-	& h2 {
-		color: $color-primary;
-		font-size: 4rem;
+	&__header {
+		padding: 2rem 0;
+		background-color: $color-primary;
+		color: $color-secondary;
+		font-size: 2.6rem;
 		margin-bottom: 3rem;
 	}
 }
