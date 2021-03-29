@@ -1,7 +1,9 @@
 /* VARIABLES */
 $color-primary: #2b2e4a;
 $color-secondary: #e84545;
-$shadow: 0 1.3rem 2rem 10px rgba(0, 0, 0, 0.2);
+$color-secondary-light-1: #f35f5f;
+$color-secondary-light-2: #eb5151;
+$shadow: 0 2rem 3rem 2px rgba(0, 0, 0, 0.15);
 
 *,
 *::before,
@@ -19,4 +21,29 @@ html {
 body {
 	font-family: 'Quicksand';
 	font-size: 1.6rem;
+}
+
+.link {
+	text-decoration: none;
+	color: $color-secondary;
+}
+
+.link:hover {
+	border-bottom: 1px solid currentColor;
+}
+
+.btn-container {
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: $color-primary;
+	color: $color-secondary;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	padding: 0.6em 1.5em;
+	border-radius: 5px;
 }
