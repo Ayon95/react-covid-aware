@@ -1,7 +1,7 @@
 const questions = [
 	{
 		_id: '1',
-		text: 'Indoor limits for parties 10?',
+		text: 'Indoor limits for parties 10 people?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -10,7 +10,7 @@ const questions = [
 	},
 	{
 		_id: '2',
-		text: 'Outdoor limits for parties 25?',
+		text: 'Outdoor limits for parties 25 people?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -33,12 +33,12 @@ const questions = [
 	},
 	{
 		_id: '5',
-		text: 'Indoor limits for parties 5?',
+		text: 'Indoor limits for parties 5 people?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '6',
-		text: 'Maximum number of patrons permitted to be seated indoors at a restaurant is 10?',
+		text: 'Maximum number of patrons permitted to be seated indoors at a restaurant is 10 people?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
@@ -62,32 +62,32 @@ const questions = [
 	},
 	{
 		_id: '10',
-		text: 'Indoor and outdoor service prohibited at restaurants?',
+		text: 'Indoor and outdoor services prohibited at restaurants?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '11',
-		text: 'Hair Salons closed?',
+		text: 'Hair salons closed?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '12',
-		text: 'Casinos Closed?',
+		text: 'Casinos closed?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '13',
-		text: 'Horse Racing Training Only and No Races?',
+		text: 'Horse racing training only and no races?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '14',
-		text: 'Motorsports Closed?',
+		text: 'Motorsports closed?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '15',
-		text: 'Indoor limits for public events and gatherings in organizations 50?',
+		text: 'Indoor limits for public events and gatherings in organizations 50 people?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -96,7 +96,7 @@ const questions = [
 	},
 	{
 		_id: '16',
-		text: 'Outdoor limits for public events and gatherings in organizations 100?',
+		text: 'Outdoor limits for public events and gatherings in organizations 100 people?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -105,17 +105,17 @@ const questions = [
 	},
 	{
 		_id: '17',
-		text: 'Outdoor limits for all public events and gatherings 25?',
+		text: 'Outdoor limits for all public events and gatherings 25 people?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '18',
-		text: 'Outdoor limits for all public events and gatherings 10?',
+		text: 'Outdoor limits for all public events and gatherings 10 people?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '19',
-		text: 'Outdoor limits for religious gatherings, funerals, and wedding events 100?',
+		text: 'Outdoor limits for religious gatherings, funerals, and wedding events 100 people?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -136,12 +136,12 @@ const questions = [
 	},
 	{
 		_id: '21',
-		text: 'Outdoor limits for religious gatherings, funerals, and wedding events 10?, 5',
+		text: 'Outdoor limits for religious gatherings, funerals, and wedding events 10 people?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
 		_id: '22',
-		text: 'Indoor limits for religious gatherings, funerals, and wedding events 100?, 5',
+		text: 'Indoor limits for religious gatherings, funerals, and wedding events 100 people?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
@@ -190,12 +190,12 @@ const questions = [
 	},
 	{
 		_id: '28',
-		text: 'Indoor fitness class limits for sports and fitness facilities 50?',
+		text: 'Indoor fitness class limits for sports and fitness facilities 50 people?',
 		answers: [{ _id: '1', name: 'Green' }],
 	},
 	{
 		_id: '29',
-		text: 'Outdoor fitness class limits for sports and fitness facilities 100?',
+		text: 'Outdoor fitness class limits for sports and fitness facilities 100 people?',
 		answers: [{ _id: '1', name: 'Green' }],
 	},
 	{
@@ -208,7 +208,7 @@ const questions = [
 	},
 	{
 		_id: '31',
-		text: 'Outdoor fitness class limits for sports and fitness facilities 25?',
+		text: 'Outdoor fitness class limits for sports and fitness facilities 25 people?',
 		answers: [
 			{ _id: '2', name: 'Yellow' },
 			{ _id: '3', name: 'Orange' },
@@ -216,7 +216,7 @@ const questions = [
 	},
 	{
 		_id: '32',
-		text: 'Indoor limits for areas with weights or exercise equipment 50?',
+		text: 'Indoor limits for areas with weights or exercise equipment 50 people?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
@@ -226,12 +226,12 @@ const questions = [
 	},
 	{
 		_id: '34',
-		text: 'Indoor limits for sports spectators 50?',
+		text: 'Indoor limits for sports spectators 50 people?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '35',
-		text: 'Outdoor limits for sports spectators 100?',
+		text: 'Outdoor limits for sports spectators 100 people?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
@@ -271,7 +271,7 @@ const questions = [
 	},
 	{
 		_id: '40',
-		text: 'Limits for casinos, bingo halls, and gaming establishments 50?',
+		text: 'Limits for casinos, bingo halls, and gaming establishments 50 people?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -280,17 +280,17 @@ const questions = [
 	},
 	{
 		_id: '41',
-		text: 'Indoor limits for casinos, bingo halls, and gaming establishments 10?',
+		text: 'Indoor limits for casinos, bingo halls, and gaming establishments 10 people?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '42',
-		text: 'Outdoor limits for casinos, bingo halls, and gaming establishments 25?',
+		text: 'Outdoor limits for casinos, bingo halls, and gaming establishments 25 people?',
 		answers: [{ _id: '4', name: 'Red' }],
 	},
 	{
 		_id: '43',
-		text: 'Table games are prohibited casinos, bingo halls, and gaming establishments?',
+		text: 'Table games are prohibited in casinos, bingo halls, and gaming establishments?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -319,7 +319,7 @@ const questions = [
 	},
 	{
 		_id: '46',
-		text: 'Indoor spectator limits for performing arts facilities 50?',
+		text: 'Indoor spectator limits for performing arts facilities 50 people?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -328,7 +328,7 @@ const questions = [
 	},
 	{
 		_id: '47',
-		text: 'Outdoor spectator limits for performing arts facilities 100?',
+		text: 'Outdoor spectator limits for performing arts facilities 100 people?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
