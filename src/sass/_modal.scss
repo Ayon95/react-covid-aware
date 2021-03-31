@@ -8,11 +8,11 @@
 	align-items: center;
 	z-index: 5;
 	background-color: rgba(#eee, 0.75);
-	backdrop-filter: blur(6px);
+	backdrop-filter: blur(7px);
 }
 
 .modal {
-	background-color: rgba($color-secondary, 0.8);
+	background-color: #d5d5d5;
 	color: $color-secondary;
 	text-align: center;
 	padding-bottom: 4rem;
