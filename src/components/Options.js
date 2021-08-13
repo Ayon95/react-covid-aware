@@ -1,4 +1,4 @@
-import { options } from '../services/localSelectionService.js';
+import { options } from '../services/optionsService.js';
 import Option from './Option.js';
 
 function Options({ handleClickOption, answers, shouldShowAnswers }) {

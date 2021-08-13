@@ -6,18 +6,17 @@ function Message({ removeMessage, answeredCorrectly, goToNextQuestion, shouldSho
 		text: answeredCorrectly ? 'Correct Answer' : 'Wrong Answer',
 	};
 
-	// this will run after the first time this component mounts
-	// the message will disappear after 3 seconds, and we go to the next question
+	// the message will disappear after 2 seconds, and we go to the next question
 	useEffect(() => {
 		if (shouldShowMessage) {
-			const timeout = setTimeout(() => {
+			const timerId = setTimeout(() => {
 				removeMessage();
 				goToNextQuestion();
 			}, 2000);
-			// cleanup function
-			return () => clearTimeout(timeout);
+			// cleanup function that will clear the timer
+			return () => clearTimeout(timerId);
 		}
-	}, [shouldShowMessage, removeMessage, goToNextQuestion]); // listing them as dependencies to get rid of the warning
+	}, [shouldShowMessage, removeMessage, goToNextQuestion]);
 	return (
 		<div className="message-container">
 			<p className={`message message--${message.type} ${shouldShowMessage ? 'reveal' : ''}`}>

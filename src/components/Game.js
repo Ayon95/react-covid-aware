@@ -1,7 +1,7 @@
 import InfoBar from './InfoBar';
 import Options from './Options';
 import Question from './Question';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Message from './Message';
 import Modal from './Modal';
 
@@ -31,12 +31,14 @@ function Game({ questions, highscore, gameIsOver, setGameIsOver }) {
 	}
 
 	function goToNextQuestion() {
+		// whenever we go to the next question, we need to reset shouldShowAnswers to false
+		setShouldShowAnswers(false);
 		// don't go to the next question if the user is on the last question
 		if (currentQuestion.number === questions.length) {
 			endGame();
 			return;
 		}
-		setQuestionIndex(questionIndex + 1);
+		setQuestionIndex(currentState => currentState + 1);
 	}
 
 	function handleClickOption(optionID) {
@@ -54,11 +56,6 @@ function Game({ questions, highscore, gameIsOver, setGameIsOver }) {
 		// need to show message
 		setShouldShowMessage(true);
 	}
-
-	// whenever we go to the next question, we need to reset shouldShowAnswers to false
-	useEffect(() => {
-		setShouldShowAnswers(false);
-	}, [questionIndex]);
 
 	return (
 		<>

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import GameIntro from './components/GameIntro.js';
 import Game from './components/Game.js';
-import { getRandomQuestions } from './services/localQuestionService.js';
+import { getRandomQuestions } from './services/questionsService.js';
 import { useEffect, useState } from 'react';
 
 const highscore = Number.parseFloat(localStorage.getItem('highscore'));

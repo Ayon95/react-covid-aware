@@ -56,8 +56,7 @@ const questions = [
 	},
 	{
 		_id: '9',
-		text:
-			'No indoor organized public events and social gatherings, except with members of the same household?',
+		text: 'No indoor organized public events and social gatherings, except with members of the same household?',
 		answers: [{ _id: '5', name: 'Grey' }],
 	},
 	{
@@ -125,8 +124,7 @@ const questions = [
 	},
 	{
 		_id: '20',
-		text:
-			'Indoor limits for religious gatherings, funerals, and wedding events 30% capacity of room?',
+		text: 'Indoor limits for religious gatherings, funerals, and wedding events 30% capacity of room?',
 		answers: [
 			{ _id: '1', name: 'Green' },
 			{ _id: '2', name: 'Yellow' },
@@ -300,8 +298,7 @@ const questions = [
 	},
 	{
 		_id: '44',
-		text:
-			'Cinemas are closed except for drive-in cinemas, rehearsals, or performing broadcasted events with restrictions?',
+		text: 'Cinemas are closed except for drive-in cinemas, rehearsals, or performing broadcasted events with restrictions?',
 		answers: [
 			{ _id: '4', name: 'Red' },
 			{ _id: '5', name: 'Grey' },
@@ -391,13 +388,22 @@ const questions = [
 	},
 ];
 
+// This function will shuffle the questions array and return the first 10 questions from the shuffled array
+// Using the modern version of the Fisher-Yates shuffle algorithm
 export function getRandomQuestions() {
-	let shuffleQuestions = [...questions];
-	for (let i = shuffleQuestions.length - 1; i > 0; i--) {
+	let shuffledQuestions = [...questions];
+	const totalQuestions = shuffledQuestions.length;
+	// loop starting from the end of the array
+	for (let i = totalQuestions - 1; i > 0; i--) {
+		// generating a random number between 0 and i
+		// will use this number as index to select a random question from the array
 		const j = Math.floor(Math.random() * (i + 1));
-		[shuffleQuestions[i], shuffleQuestions[j]] = [shuffleQuestions[j], shuffleQuestions[i]];
+		// swapping the position of the questions
+		[shuffledQuestions[i], shuffledQuestions[j]] = [shuffledQuestions[j], shuffledQuestions[i]];
 	}
-	return shuffleQuestions.slice(0, 10).map((question, index) => {
-		return { ...question, number: index + 1 }; // adding a new property, number
+	// returning the first 10 questions from the array
+	return shuffledQuestions.slice(0, 10).map((question, index) => {
+		// adding a new property, number
+		return { ...question, number: index + 1 };
 	});
 }
