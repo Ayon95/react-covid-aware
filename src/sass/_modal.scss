@@ -7,8 +7,8 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 5;
-	background-color: rgba(#eee, 0.75);
-	backdrop-filter: blur(7px);
+	background-color: rgba(rgb(117, 117, 117), 0.75);
+	backdrop-filter: blur(1rem);
 }
 
 .modal {
@@ -19,7 +19,6 @@
 	width: 80%;
 	max-width: 50rem;
 	border-radius: 4px;
-	overflow: hidden;
 	box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5);
 
 	&__header {
@@ -28,13 +27,5 @@
 		color: $color-secondary;
 		font-size: 2.6rem;
 		margin-bottom: 3rem;
-
-		@include respond-max($bp-smallest) {
-			font-size: 2.2rem;
-		}
-
-		@include respond-min($bp-large) {
-			font-size: 3rem;
-		}
 	}
 }

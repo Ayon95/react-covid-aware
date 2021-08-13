@@ -12,7 +12,7 @@ function InfoBar({ score, highScore, questions }) {
 			</div>
 
 			<div>
-				<span className="info-bar__text">Total questions: </span>
+				<span className="info-bar__text">Questions: </span>
 				<span className="info-bar__value">{questions.length}</span>
 			</div>
 		</div>
